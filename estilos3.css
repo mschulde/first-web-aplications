@@ -1,24 +1,26 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 .contenedor {
-    border: 2px solid black;
-    margin: 10px auto;
-    max-width: 1000px;
+    border: 1px solid black;
+    margin: 50px auto;
+    max-width: 100%;
 }
 
 .header, .footer {
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 20px;
     text-align: center;
+    background-color: lightgray;
+    font-weight: bold;
 }
 
 .dos_columnas, .tres_cajas, .cuatro_cajas {
     display: grid;
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 10px;
     gap: 10px;
     justify-content: space-between;
@@ -26,19 +28,31 @@
 
 .dos_columnas {
     grid-template-columns: 48% 48%;
+    background-color: rgb(255, 255, 67);
 }
 
 .tres_cajas {
     grid-template-columns: 31% 31% 31%;
+    background-color: rgb(67, 67, 250); 
 }
 
 .cuatro_cajas {
     grid-template-columns: 22% 22% 22% 22%;
+    background-color: rgb(255, 67, 67);
 }
 
 .columna, .caja {
-    border: 1px solid black;
+    border: 3px solid black;
     height: 60px;
+
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #333;
 }
 
 @media (max-width: 800px) {
