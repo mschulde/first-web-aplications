@@ -41,7 +41,7 @@
     height: 60px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .tres_cajas {
         grid-template-columns: 100%;
     }
@@ -50,7 +50,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .dos_columnas, .cuatro_cajas {
         grid-template-columns: 100%;
     }
